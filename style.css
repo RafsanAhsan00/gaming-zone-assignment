@@ -19,10 +19,11 @@ body {
 .primary-text {
     color: #FF42A5;
 }
-.p-text{
-color: #534C64;
-font-size: 1.125rem;
-font-weight: 400;
+
+.p-text {
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
 
 }
 
@@ -72,15 +73,16 @@ font-weight: 400;
 }
 
 /* banner styles */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70vh;
 }
-.banner-container{
+
+.banner-container {
     background-image: url('./images/Group14.png');
-    background-size:100%;
+    background-size: 100%;
 }
 
 .bnr-btn-1 {
@@ -125,41 +127,38 @@ font-weight: 400;
     font-weight: 500;
     margin-bottom: 15px;
 }
-/* Play instantly styles */
-.play-container{
-    margin: 120px 0px;
-}
-.play-content{
+
+/* "play" section style */
+.play-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 200px;
-}
-.play-img{
-    width:400px;
-    position: relative;
-    left: 100px;
-}
-.play-text{
+    margin: 120px 200px;
     text-align: right;
 }
-.play-text h3{
-font-size: 2.5rem;
-font-weight: 700;
+
+.play-container h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 
-.angela{
+.play-img {
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 180px;
-    left: 100px;
-}
-.angel-img{
-    width: 200px;
+    flex-direction: row-reverse;
 }
 
+.angela {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 350px;
+    left: 150px;
+}
+
+
+/* Mediaquery */
 /* mediaquery for mobile */
 @media screen and (max-width:425px) {
 
@@ -168,19 +167,43 @@ font-weight: 700;
         flex-direction: column;
         gap: 10px;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         background: 100%;
     }
-    .banner-container img{
+
+    .banner-container img {
         width: 300px;
         margin: 0;
     }
-    .banner-text{
+
+    .banner-text {
         background-image: url('./images/Group14.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .play-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .horse {
+        width: 500px;
+        margin-right: 230px;
+    }
+
+    .angela {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 500px;
+        top: 190px;
+        left: 130px;
+    }
+
+
 }
 
 /* mediaquery for tablet */
@@ -189,11 +212,33 @@ font-weight: 700;
         flex-direction: column;
         gap: 15px;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
     }
-    .banner-container img{
+
+    .banner-container img {
         width: 300px;
         margin: 0;
+    }
+
+    .play-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .horse {
+        width: 300px;
+        margin-right: 250px;
+        margin-left: 50px;
+    }
+
+    .angela {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 500px;
+        top: 190px;
+        left: 190px;
     }
 }

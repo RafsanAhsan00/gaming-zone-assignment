@@ -19,6 +19,12 @@ body {
 .primary-text {
     color: #FF42A5;
 }
+.p-text{
+color: #534C64;
+font-size: 1.125rem;
+font-weight: 400;
+
+}
 
 /* nav style */
 .nav-container {
@@ -67,14 +73,14 @@ body {
 
 /* banner styles */
 .banner-container{
-    background-image: url(./images/Group14.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 70vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 70vh;
+}
+.banner-container{
+    background-image: url('./images/Group14.png');
+    background-size:100%;
 }
 
 .bnr-btn-1 {
@@ -95,7 +101,7 @@ body {
 }
 
 .bnr-img {
-    width: 470px;
+    width: 100%;
 }
 
 .title-h4 {
@@ -119,7 +125,40 @@ body {
     font-weight: 500;
     margin-bottom: 15px;
 }
+/* Play instantly styles */
+.play-container{
+    margin: 120px 0px;
+}
+.play-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+}
+.play-img{
+    width:400px;
+    position: relative;
+    left: 100px;
+}
+.play-text{
+    text-align: right;
+}
+.play-text h3{
+font-size: 2.5rem;
+font-weight: 700;
+}
 
+.angela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 180px;
+    left: 100px;
+}
+.angel-img{
+    width: 200px;
+}
 
 /* mediaquery for mobile */
 @media screen and (max-width:425px) {
@@ -131,6 +170,7 @@ body {
     }
     .banner-container{
         flex-direction: column-reverse;
+        background: 100%;
     }
     .banner-container img{
         width: 300px;

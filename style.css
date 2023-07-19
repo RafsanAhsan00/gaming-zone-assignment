@@ -21,7 +21,7 @@ body {
 }
 
 .p-text {
-    color: #534C64;
+    color: #878195;
     font-size: 1.125rem;
     font-weight: 400;
 
@@ -238,7 +238,7 @@ p {
     max-width: 1900px;
     min-height: 400px;
     background-color: rgba(242, 187, 196, 0.137);
-    margin: 30px 0px;
+    margin-top: 30px;
 }
 
 .img-b {
@@ -262,6 +262,51 @@ p {
     font-size: 1.2rem;
     font-weight: 600;
 }
+/* footer */
+.logo-text{
+color: #FFF;
+font-size: 2.3rem;
+font-weight: 700;
+}
+.upper-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+footer{
+    max-width: 1920px;
+    min-height: 600px;
+  
+    background-color: #0B0223;;
+}
+.upper-text h5{
+color: #FFF;
+font-size: 1.2rem;
+font-weight: 600;
+}
+.upper-text{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 60px 400px;
+}
+.mid-icon{
+    width: 40px;
+    height: 40px;
+}
+.middle-icon{
+  text-align: center;
+  margin-top: 60px;
+}
+.mid-img{
+    padding: 0px 30px;
+}
+.terms{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 70px 60px;
+}
+
 
 
 /* Mediaquery */
@@ -323,10 +368,10 @@ p {
         grid-template-columns: 1fr;
         margin-left: 80px;
         gap: 5px;
-    } 
-
-
-
+    }
+    .upper-logo{
+        flex-direction: column;
+    }   
 }
 
 /* mediaquery for tablet */

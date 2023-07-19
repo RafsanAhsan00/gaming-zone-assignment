@@ -187,32 +187,86 @@ p {
     font-size: 2.5rem;
     font-weight: 700;
 }
-.gradient{
+
+.gradient {
     background-image: linear-gradient(to bottom, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
 }
 
-  .overlay{
+.overlay {
     text-align: center;
-    position:relative;
+    position: relative;
     bottom: 50%;
     color: rgb(255, 255, 255);
     opacity: 0;
-  }
-  .f-img{
+}
+
+.f-img {
     cursor: pointer;
-  }
- 
-  .f-img:hover{
+}
+
+.f-img:hover {
     filter: brightness(30%);
 }
-  .funny-img:hover .overlay{
+
+.funny-img:hover .overlay {
     opacity: 1;
-  }
+}
+
+/* button-icons styles */
+.buttons1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 120px;
+    margin-left: 80px;
+   
+
+}
+
+.buttons2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.button-icon {
+    border: 1px solid rgba(242, 187, 196, 0.137);
+    max-width: 1900px;
+    min-height: 400px;
+    background-color: rgba(242, 187, 196, 0.137);
+    margin: 30px 0px;
+}
+
+.img-b {
+    width: 60px;
+}
+
+.btn-b {
+    width: 250px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    margin-top: 0 auto;
+}
+.btn-text{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
 /* Mediaquery */
 /* mediaquery for mobile */
-@media screen and (max-width:425px){
+@media screen and (max-width:425px) {
 
     .nav-container,
     .nav-list {
@@ -262,8 +316,16 @@ p {
     .funny-img {
         margin: 0 auto;
     }
+    .buttons1{
+        grid-template-columns: 1fr;
+    } 
+    .buttons2{
+        grid-template-columns: 1fr;
+        margin-left: 80px;
+        gap: 5px;
+    } 
 
-    
+
 
 }
 
@@ -302,6 +364,15 @@ p {
         top: 190px;
         left: 190px;
     }
-    
-    
+    .buttons1{
+        width: 100%;
+        grid-template-columns: repeat( 2, 1fr);
+    } 
+    .buttons2{
+        width: 100%;
+        grid-template-columns:  repeat( 2, 1fr);
+        margin-left: 80px;
+        gap: 5px;
+    } 
+
 }
